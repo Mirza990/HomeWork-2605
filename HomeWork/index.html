@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HomeWork</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">        
+<body>
+<div class="container">
+	<div class="row">
+		<div class="header">
+			<div class="col-md-12">
+				<button class="btn1" onclick="divYarat()">Create</button>
+				<button class="btn2" onclick="location.reload();">Delete</button>
+			</div>	
+		</div>		
+			<div class="row">
+				<div class="col-md-3" style="width: 150px; height:248px; background-color: grey; margin-left: 15px;">
+					<button class="btn3" onclick="borderVer()">Effect1</button>
+					<button class="btn4" onclick="olcuArtir()">Effect2</button>
+					<button class="btn5" onclick="olcuAzalt()">Effect3</button>
+					<button class="btn6" onclick="sekil()">Effect4</button>
+				</div>
+				<div class="col-md-9">
+					
+					<div id="myDIV" >
+						<img id="myImage">
+					</div>
+				</div>
+			</div>	
+	</div>
+</div>
+<script>
+function divYarat() {
+	 document.getElementById("myDIV").style.width = "500px";
+	 document.getElementById("myDIV").style.height = "230px";
+	 document.getElementById("myDIV").style.backgroundColor = "red";
+	 document.getElementById("myDIV").style.marginLeft = "250px";
+}
+function borderVer() {
+	 document.getElementById("myDIV").style.border = "3px solid black";
+	 document.getElementById("myDIV").style.width = "500px";
+	 document.getElementById("myDIV").style.height = "230px";
+	 document.getElementById("myDIV").style.backgroundColor = "red";
+	 document.getElementById("myDIV").style.marginLeft = "250px";
+}
+function olcuArtir() {
+	 document.getElementById("myDIV").style.width = "calc(500px + 20%)";
+	 document.getElementById("myDIV").style.height = "230px";
+	 document.getElementById("myDIV").style.backgroundColor = "red";
+	 document.getElementById("myDIV").style.marginLeft = "250px";
+}
+function olcuAzalt() {
+	 document.getElementById("myDIV").style.width = "calc(500px - 20%)";
+	 document.getElementById("myDIV").style.height = "230px";
+	 document.getElementById("myDIV").style.backgroundColor = "red";
+	 document.getElementById("myDIV").style.marginLeft = "250px";
+}
+function sekil() {
+     document.getElementById("myDIV").style.width = "calc(500px)";
+	 document.getElementById("myDIV").style.height = "230px";
+	 document.getElementById("myDIV").style.backgroundColor = "red";
+	 document.getElementById("myDIV").style.marginLeft = "250px";
+	 document.getElementById("myImage").src = "Home/3.jpg";
+	 document.getElementById("myImage").style.width = "495px";
+	 document.getElementById("myImage").style.height = "225px";
+}
+</script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</script>
+</body>
+</html>
